@@ -17,11 +17,6 @@ import { AppState, InternalStateType } from './app.service';
 
 import { DashboardModule } from './dashboard/dashboard.module';
 
-import { HomeComponent } from './home';
-import { AboutComponent } from './about';
-import { NoContentComponent } from './no-content';
-import { XLarge } from './home/x-large';
-
 // Application wide providers
 const APP_PROVIDERS = [
   ...APP_RESOLVER_PROVIDERS,
@@ -40,11 +35,7 @@ type StoreType = {
 @NgModule({
   bootstrap: [ AppComponent ],
   declarations: [
-    AppComponent,
-    AboutComponent,
-    HomeComponent,
-    NoContentComponent,
-    XLarge
+    AppComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,
