@@ -16,6 +16,7 @@ import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { AppState, InternalStateType } from './app.service';
 
 import { DashboardModule } from './dashboard/dashboard.module';
+import { LogPageModule } from './log-page/log-page.module';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -42,6 +43,7 @@ type StoreType = {
     FormsModule,
     HttpModule,
     DashboardModule,
+    LogPageModule,
     RouterModule.forRoot(ROUTES, { useHash: true })
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
