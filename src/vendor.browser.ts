@@ -22,6 +22,7 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/mergeMap';
 
 import 'font-awesome/css/font-awesome.css';
+import 'ng2-datepicker';
 
 if ('production' === ENV) {
   // Production

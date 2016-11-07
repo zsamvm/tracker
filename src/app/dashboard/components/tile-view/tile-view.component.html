@@ -10,7 +10,9 @@
 </div>
 <div class="row tile-container">
    <div class="col-md-3" *ngFor="let tileName of tilesToDisplay">
-      <tile-component [dataName]="tileName">
+      <tile-component
+         (click)="onSelect(tileName)"
+         [dataName]="tileName">
       </tile-component>
    </div>
 </div>

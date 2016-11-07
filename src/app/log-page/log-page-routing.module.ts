@@ -1,11 +1,16 @@
 import { NgModule }            from '@angular/core';
 import { RouterModule }        from '@angular/router';
 
-import { LogPageComponent }    from './log-page.component';
+import { DataNameEnum } from '../types/data-name-enum';
+
+import { LogBodyWeightComponent }    from './components/bodyweight/log-bodyweight.component';
 
 @NgModule({
   imports: [RouterModule.forChild([
-    { path: 'logpage', component: LogPageComponent }
+    {
+      path: 'logpage' + '/' + DataNameEnum.BODY_WEIGHT.toString(),
+      component: LogBodyWeightComponent
+    }
   ])],
   exports: [RouterModule]
 })

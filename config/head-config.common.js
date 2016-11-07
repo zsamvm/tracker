@@ -17,6 +17,8 @@ module.exports = {
   link: [
 
     { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' },
+    { rel: 'stylesheet', href: 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css',
+        media: 'all' },
 
     /** <link> tags for 'apple-touch-icon' (AKA Web Clips). **/
     { rel: 'apple-touch-icon', sizes: '57x57', href: '/assets/icon/apple-icon-57x57.png' },
